@@ -28,7 +28,7 @@ const Post = () => {
                 </form>
             </div>
             <div>
-                <button>Add new post</button>
+                <button><Link to="/addPost">Add new post</Link></button>
             </div>
             <div className="post-cards">
                 { filteredPosts.map((post, index) => (

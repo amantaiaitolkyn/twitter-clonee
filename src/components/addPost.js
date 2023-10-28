@@ -6,9 +6,7 @@ function AddPost() {
     const navigate = useNavigate();
     const handleAddPost = (author, content) => {
         navigate('/home');
-
     }
-
     return (
         <div className="container">
             <div className="header">

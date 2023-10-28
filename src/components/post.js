@@ -10,6 +10,8 @@ const Post = () => {
             (post.author.toLowerCase().includes(searchTerm.toLowerCase()))
         );
     });
+    function likePost(){
+    }
     return(
 
         <div className="post">
@@ -37,6 +39,8 @@ const Post = () => {
                             <div className="post-header">
                                 <Link to={`/posts/${post.id}`}><h4 className="link">{post.author}</h4></Link>
                                 <img src={post.image} alt=" " width={400}/>
+                                <p>Like: {post.like}</p>
+                                <button type="button" onClick={() => likePost()}>Like</button>
                             </div>
                             <p className="room-title">{post.title}</p>
                             <div className="comment"><input
